@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Threat Level Styling */
+.threat-level-container {
+  @apply bg-gray-800 text-white p-6 rounded-lg shadow-lg text-center;
+}
+
+.threat-level-container h2 {
+  @apply text-xl font-semibold mb-4;
+}
+
+/* Color-coded threat indicator */
+.threat-indicator {
+  @apply text-lg font-bold py-3 px-6 rounded-full transition-all duration-500;
+}
+
+.low {
+  @apply bg-green-500 text-white;
+}
+
+.moderate {
+  @apply bg-yellow-500 text-gray-900;
+}
+
+.high {
+  @apply bg-orange-500 text-white;
+}
+
+.severe {
+  @apply bg-red-600 text-white;
+}

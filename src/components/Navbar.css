@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar Styling */
+.navbar {
+  @apply bg-gray-900 shadow-lg py-4;
+}
+
+.container {
+  @apply max-w-7xl mx-auto flex justify-between items-center px-6;
+}
+
+.logo {
+  @apply text-xl font-bold text-white;
+}
+
+.logo span {
+  @apply text-blue-500;
+}
+
+.nav-links {
+  @apply hidden md:flex gap-6;
+}
+
+.nav-links li {
+  @apply list-none;
+}
+
+.nav-links a {
+  @apply text-gray-300 hover:text-white transition-colors duration-300;
+}
+
+.active {
+  @apply text-blue-500 font-semibold;
+}
+
+.menu-icon {
+  @apply md:hidden text-white cursor-pointer;
+}
+
+.nav-links.open {
+  @apply flex flex-col absolute top-16 left-0 w-full bg-gray-800 p-4 space-y-4 shadow-md;
+}

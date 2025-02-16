@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevention Tips Container */
+.prevention-tips-container {
+  @apply bg-gray-900 text-white p-6 rounded-lg shadow-lg w-full;
+}
+
+.prevention-tips-container h2 {
+  @apply text-2xl font-semibold mb-4 text-center;
+}
+
+/* Tips List */
+.tips-list {
+  @apply flex flex-col space-y-4;
+}
+
+/* Individual Tip Item */
+.tip-item {
+  @apply bg-gray-800 p-4 rounded-lg shadow-md flex flex-col cursor-pointer transition-all duration-300 hover:bg-gray-700;
+}
+
+.tip-header {
+  @apply flex items-center space-x-3;
+}
+
+.tip-header h3 {
+  @apply text-lg font-bold;
+}
+
+.icon {
+  @apply text-blue-400 w-6 h-6;
+}
+
+/* Expanded Tip */
+.tip-description {
+  @apply text-sm text-gray-300 mt-2;
+}
+
+.expanded {
+  @apply bg-blue-900;
+}
