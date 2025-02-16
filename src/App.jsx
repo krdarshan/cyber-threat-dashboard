@@ -14,6 +14,9 @@ function App() {
       <div className="w-[500px]  h-[400px] bg-red-500 p-10 m-10 rounded-md text-center text-4xl">
         I am ready for battle
       </div>
+      <h1>
+        I am A good boy from India
+      </h1>
     </>
   );
 }
