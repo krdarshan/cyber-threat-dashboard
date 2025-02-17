@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111827; /* Dark Background */
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Logo */
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #facc15; /* Yellow accent color */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo span {
+    color: #fff; /* White text for contrast */
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9ca3af; /* Grayish text */
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #facc15; /* Yellow on hover */
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #1f2937; /* Darker Background */
+    width: 250px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nav-menu a {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    background: #374151; /* Slightly lighter dark */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block;
+        color: #fff;
+    }
+}

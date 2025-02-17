@@ -1,24 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import Dashboard from "./pages/Dashboard";
+import Threats from "./pages/Threats";
+import Settings from "./pages/Settings";
+import NotFound from "./pages/NotFound";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline bg-red-400 ">
-        Hey i am Darshan kr
-      </h1>
-      <div className="w-[500px]  h-[400px] bg-red-500 p-10 m-10 rounded-md text-center text-4xl">
-        I am ready for battle
+    <div className="app-container">
+      <Sidebar />
+      <div className="main-content">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/threats" element={<Threats />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
-      <h1>
-        I am A good boy from India
-      </h1>
-    </>
+    </div>
   );
-}
+};
 
 export default App;
